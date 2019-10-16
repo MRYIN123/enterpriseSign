@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ZDMT下载</title>
+    <style type="text/css">
+    	#div1{
+    		margin-top: 90px;
+    		height: 120px;
+    		background: white;
+    		text-align: center;
+    	}
+
+        img{
+           margin-top: 10px; 	 
+        }
+
+        #div11{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #333333;
+            font: "微软雅黑";
+            text-align: left;
+            margin-top: 20px;
+            font-style: bold;
+        }
+
+        #div2{
+        	margin-left: 10px;
+        	margin-right: 10px;
+        	color: #333333;
+        	font: "微软雅黑";
+            text-align: left;
+            margin-top: 10px;
+        }
+        
+        #div3{
+        		margin-left: 10px;
+        		margin-right: 10px;
+        		margin-top: 10px;
+        		text-align: center;
+        	}
+        #div4{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        a{
+        	color: blue;
+        	text-align: center;
+        	margin-top: 20px;
+        }
+        #btn_zdmt{
+        	text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #3F51B5;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border-color: #3F51B5;
+            width: 170px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #btn_zdmt_zcb{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #3F51B5;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border-color: #3F51B5;
+            width: 170px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+   
+    </style>
+    <script>
+        
+        function downloadZDMT_Zhu(){
+            self.location.href = "itms-services:///?action=download-manifest&url=https://www.zdmt.io/zdmt_download_res/line1/config_zdmt_io/manifest.plist";
+        }
+        
+        function downloadZDMT_Hx368(){
+            self.location.href = "itms-services:///?action=download-manifest&url=https://www.zdmt.io/zdmt_download_res/line2/config_zdmt_io/manifest.plist";
+        }
+
+
+    </script>
+    <!--itms-services://?action=download-manifest&url=
+			https://raw.githubusercontent.com/用户名/仓库名/master/manifest.plist-->
+</head>
+<body>
+	<!--长按二维码下载    -->
+	<div id="div1">
+		<img src="https://www.zdmt.io/zdmt_download_res/download_page_zdmt_io/img/appicon.png" width="80" height="80"/>
+	</div>
+	
+    <div id="div4">
+        <button id="btn_zdmt_zcb" onclick="downloadZDMT_Zhu()">下载ZDMT.IO线路一</button>
+    </div>
+    <div id="div4">
+        <button id="btn_zdmt_zcb" onclick="downloadZDMT_Hx368()">下载ZDMT.IO线路二</button>
+    </div>    
+	
+	<div id="div11">
+		温馨提示：请按照以下步骤操作
+	</div>
+    <div id="div2">
+        步骤1：请选择在safari打开当前页面（如果是之前打开的下载界面请刷新当前网页）。
+    </div>
+    <div id="div2">
+        步骤2：任意选择一条下载线路，点击下载。如果下载之后APP图标是黑色并且无法点击，请卸载APP并换其他线路重新下载。
+    </div>
+    <div id="div2">
+        步骤3：点击手机的设置->通用->描述文件与设备管理，选择信任ZDMT.IO。然后打开APP，即可使用
+    </div>
+	
+
+</body>
+</html>
